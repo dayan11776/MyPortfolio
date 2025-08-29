@@ -6,17 +6,17 @@ export const Footer = () => {
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://flowbite.com/" className="hover:underline">Bryan Tapel</a>. All Rights Reserved.
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-            <li>
-                <Link to="#" className="hover:underline me-4 md:me-6">About</Link>
+            <li className="cursor-pointer">
+                <Link to="Home" onClick={() => setActive("Home")} smooth duration={300} className={active === "Home"?activeLink:notActiveLink} >Home</Link>
             </li>
-            <li>
-                <Link to="#" className="hover:underline me-4 md:me-6">Privacy Policy</Link>
+            <li className="cursor-pointer"  >
+                <Link to="Skills" onClick={() => setActive("Skills")} smooth duration={300}  className={active === "Skills"?activeLink:notActiveLink} >Skills</Link>
             </li>
-            <li>
-                <Link to="#" className="hover:underline me-4 md:me-6">Licensing</Link>
+            <li className="cursor-pointer">
+                <Link to="Projects" onClick={() => setActive("Projects")} smooth duration={300} className={active === "Projects"?activeLink:notActiveLink} >Projects</Link>
             </li>
-            <li>
-                <Link to="#" className="hover:underline">Contact</Link>
+            <li className="cursor-pointer">
+                <Link to="Contact" onClick={() => setActive("Contact")} smooth duration={300} className={active === "Contact"?activeLink:notActiveLink} >Contact</Link>
             </li>
         </ul>
     </footer>
