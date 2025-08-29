@@ -26,7 +26,7 @@ export const Content = () => {
                     direction="top"
                     className="text-2xl mb-4 dark:text-gray-500 font-medium"
                 />
-                <h1 className="text-7xl flex dark:text-white mb-3 max-sm:text-5xl max-lg:text-5xl">
+                <h1 className="text-7xl flex dark:text-white mb-3 max-sm:text-4xl max-lg:text-5xl">
                     <span className="mr-3">Software</span>
                     <RotatingText
                         texts={['Developer', 'Engineer']}
