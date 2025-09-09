@@ -7,12 +7,14 @@ export const Project = () => {
       name:"WatchMe",
       image:"./assets/images/MyMovie.png",
       netlify:"https://watchme11.netlify.app/",
-      github:"https://github.com/dayan11776/WatchMe"
+      github:"https://github.com/dayan11776/WatchMe",
+      tools:["ReactJS","Flowbite","Tailwind","Swiper React","React Router","TMDB API","NodeJS","HTML","CSS"]
     },
     {
       name:"Old Portfolio",
       image:"./assets/images/OldPortfolio.png",
       netlify:"https://adoring-mahavira-4710f4.netlify.app/",
+      tools:["Javascript","HTML","CSS"]
     }
   ]
 

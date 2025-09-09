@@ -2,16 +2,29 @@ import { Link } from "react-router-dom"
 
 export const Card = ({items}) => {
 
-    const {name,image,netlify,github} = items
+    const {name,image,netlify,github,tools} = items
+    // tools.forEach(element => {
+    //     console.log(element)
+    // });
 
   return (
-    <div className="w-1/2  px-2 max-sm:w-full">
-        <Link to={netlify}  target="_blank">
+    <div className="w-1/2  px-2 max-sm:w-full flex flex-col justify-between">
+        <div>
+            <Link to={netlify}  target="_blank">
             <div className="p-10 rounded-2xl border shadow-lg cursor-pointer dark:bg-gray-800 dark:border-none dark:shadow-none max-sm:p-7">
                 <img className="rounded-xl shadow-md dark:shadow-md dark:shadow-blue-900 h-56 w-full transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105" src={image} alt="project" />
             </div>
-        </Link>
-        <div className="py-5 px-2 flex justify-between">
+            </Link>
+            <div className="py-2 px-2 flex flex-wrap">
+                {
+                    tools && tools.map((val,index) =>
+                        <p className="mr-2 bg-slate-300 mb-2 py-1 px-2 rounded-sm text-sm dark:bg-slate-700 dark:text-white">{val}</p>
+                    )
+                }
+                
+            </div>
+        </div>
+        <div className="py-2 px-2 flex justify-between">
             <div>
                 <h1 className="text-2xl font-bold dark:text-white">{name}</h1>
                 <p className="text-sm dark:text-gray-500">Deployed</p>
