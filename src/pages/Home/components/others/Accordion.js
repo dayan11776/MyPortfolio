@@ -10,7 +10,7 @@ export const Accordion = ({items}) => {
         <h2 id="accordion-collapse-heading-3">
             <button onClick={() => setAccordion(!accordion)} type="button" className={`${accordion?"bg-blue-900":""} bg-blue-700 flex items-center justify-between w-full p-5 font-medium rtl:text-right border  hover:bg-blue-900 gap-3"  data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3`}>
             <span className="text-xl font-bold text-white">{Company}</span>
-            {
+            {/* {
                 accordion?(
                     <svg className="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m5 15 7-7 7 7"/>
@@ -20,7 +20,10 @@ export const Accordion = ({items}) => {
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7"/>
                     </svg>
                 )
-            }
+            } */}
+            <svg className={`${accordion?"-rotate-180":""} duration-300 w-6 h-6 text-white`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 9-7 7-7-7"/>
+            </svg>
             </button>
         </h2>
         <div id="accordion-collapse-body-3" className={`${accordion?"":"hidden"} dark:text-white`} aria-labelledby="accordion-collapse-heading-3">

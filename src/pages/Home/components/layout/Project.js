@@ -8,14 +8,21 @@ export const Project = () => {
       image:"./assets/images/MyMovie.png",
       netlify:"https://watchme11.netlify.app/",
       github:"https://github.com/dayan11776/WatchMe",
-      tools:["ReactJS","Flowbite","Tailwind","Swiper React","React Router","TMDB API","NodeJS","HTML","CSS"]
+      tools:["ReactJS","Javascript","Flowbite","Tailwind","Swiper React","React Router","TMDB API","NodeJS","HTML","CSS"]
     },
     {
       name:"Old Portfolio",
       image:"./assets/images/OldPortfolio.png",
       netlify:"https://adoring-mahavira-4710f4.netlify.app/",
       tools:["Javascript","HTML","CSS"]
-    }
+    },
+    {
+      name:"Admin",
+      image:"./assets/images/admin.png",
+      netlify:"https://admin1118.netlify.app/",
+      github:"https://github.com/dayan11776/Admin",
+      tools:["NextJS","Typescript","ShadCN UI","HTML","CSS"]
+    },
   ]
 
   return (
