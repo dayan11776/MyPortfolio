@@ -23,6 +23,13 @@ export const Project = () => {
       github:"https://github.com/dayan11776/Admin",
       tools:["NextJS","Typescript","ShadCN UI","HTML","CSS"]
     },
+    {
+      name:"Dental Clinic",
+      image:"./assets/images/Dental.png",
+      netlify:"https://dentalclinicheavenlytouch.netlify.app/",
+      github:"https://github.com/dayan11776/Dental-Clinic",
+      tools:["NextJS","ShadCN UI","Tailwind CSS","Reactbits","HTML","CSS"]
+    },
   ]
 
   return (
